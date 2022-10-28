@@ -162,6 +162,7 @@ header {
     font-size: 16px;
     line-height: 1.62;
     color: var(--title-text-color);
+    cursor: pointer;
 }
 
 .filter-button:hover,
