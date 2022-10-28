@@ -169,6 +169,7 @@ header {
 .filter-button:focus{
     background-color: var(--accent-color);
     color: var(--primary-white-color);
+    cursor: pointer;
 }
 
 .examples{
