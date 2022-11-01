@@ -3,6 +3,9 @@
     --title-text-color: #212121;
     --accent-color: #2196f3;
     --primary-white-color: #ffffff;
+    --logo-color: #000000;
+    --hero-bg-color: #2F303A;
+    --section-color: #F5F4FA;
 }
 
 .list {
@@ -17,11 +20,8 @@ body {
     letter-spacing: 0.03em;
 }
 
-header {
-    background-color: #ECECEC;
-}
 .logo {
-    color: #000;
+    color: var(--logo-color);
     text-decoration: none;
     font-family: 'Raleway';
     font-weight: 700;
@@ -43,7 +43,6 @@ header {
     color: var(--title-text-color);
     text-decoration: none;
     font-weight: 500;
-    font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
 }
@@ -57,9 +56,24 @@ header {
     color: var(--accent-color);
 }
 
+.site-nav-mail-tel {
+text-decoration: none;
+font-weight: 500;
+line-height: 1.14;
+letter-spacing: 0.02em;
+color: var(--primary-text-color);
+}
+
+.site-nav-mail-tel:hover,
+.site-nav-mail-tel:focus {
+    color: var(--accent-color);
+}
+
+
+
 /* Hero */
 .hero {
-    background-color: #2F303A;
+    background-color: var(--hero-bg-color);
 }
 
 .hero-title{
@@ -85,25 +99,17 @@ header {
 
 }
 
-.top{
-    background-color: #F5F5F5;
-}
-
 .top-title{
-    font-weight: 700;
-    font-size: 14px;
     line-height: 1.14;
     text-transform: uppercase;
     color: var(--title-text-color);
 }
 
 .top-text{
-    font-size: 14px;
     line-height: 1.71;
 }
 
 .section-title{
-    font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
     text-align: center;
@@ -111,14 +117,14 @@ header {
 }
 
 .section{
-    background-color: #F5F4FA;
+    background-color: var(--section-color);
 }
 
 .section-names{
     font-weight: 500;
-        font-size: 16px;
-        line-height: 1.19;
-        color: var(--title-text-color);
+    font-size: 16px;
+    line-height: 1.19;
+    color: var(--title-text-color);
 }
 
 .section-spec{
@@ -127,7 +133,7 @@ header {
 }
 
 .footer{
-    background-color: #2F303A
+    background-color: var(--hero-bg-color);
 }
 
 .footer-address{
@@ -151,12 +157,9 @@ header {
     color: var(--accent-color);
 }
 
-.filter{
-    background-color: #f5f5f5;
-}
 
 .filter-button{
-    background-color: #F5F4FA;
+    background-color: var(--section-color);
     font-family: inherit;
     font-weight: 500;
     font-size: 16px;
@@ -172,11 +175,7 @@ header {
     cursor: pointer;
 }
 
-.examples{
-    background-color: #f5f5f5;
-}
 .examples-title{
-    font-weight: 700;
     font-size: 18px;
     line-height: 2;   
     letter-spacing: 0.06em;
@@ -186,5 +185,4 @@ header {
 .examples-text{
     font-size: 16px;
     line-height: 1.88;
-    color: 
 }
